@@ -1,0 +1,110 @@
+/* Table.css */
+.data-table1 {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+  }
+  
+  .data-table1 th,
+  .data-table1 td {
+    border: 1px solid #e3e3e3;
+    padding: 14px;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .data-table1 th {
+    cursor: pointer;
+    background-color: #f5f5f5;
+  }
+  
+  .print-button,
+  .export-button {
+    margin: 10px;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .column-visibility {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column-visibility label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .column-visibility input {
+    margin-right: 10px;
+  }
+  
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 12px 18px;
+    background-color: #f5f5f5;
+    color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination button.active {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  .pagination button:hover {
+    background-color: #e5e5e5;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .search-container svg {
+    margin-right: 10px;
+    color: #007bff;
+  }
+  
+  .search-container input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Hover effect for table rows */
+  .data-table1 tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+  

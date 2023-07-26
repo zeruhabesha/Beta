@@ -1,0 +1,393 @@
+/* .ml-auto li .navbar-search-block{
+    display: inline;
+} */
+ul.navbar-nav li {
+    display: inline;
+  }
+  .chats{
+    float: left;
+  }
+
+
+  .users-list {
+    padding-left: 0;
+    list-style: none;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.users-list>li {
+  float: left;
+  padding: 10px;
+  text-align: center;
+  width: 25%;
+}
+.users-list>li img {
+  border-radius: 50%;
+  height: auto;
+  max-width: 100%;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+.users-list-name {
+  color: #090b0e;
+}
+.users-list-date {
+  color: #05080c;
+  font-size: 80%;
+}
+
+
+.card {
+  box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+  margin-bottom: 1rem;
+
+}
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+}
+#toast-container {
+  margin-top: 1rem;
+}
+
+#toast-container.toast-top-full-width>.toast {
+  max-width: 570px;
+}
+
+#toast-container>.toast-success {
+  background-color: #35c8c3;
+  opacity:1;
+  box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+}
+
+#toast-container>.toast-success:hover {
+  background-color: #35c8c3;
+  opacity:1;
+  box-shadow:0px 0px 10px rgba(0,0,0,0.4);
+}
+
+/* calander */
+
+
+
+.container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* height: vh; */
+}
+
+.calendar {
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.react-calendar {
+  width: 100%;
+  border: none;
+  font-family: Arial, sans-serif;
+  /* background: gainsboro; */
+}
+
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.react-calendar__navigation button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 25px;
+  color: #333;
+  flex-grow: 0;
+}
+
+.react-calendar__navigation button:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.react-calendar__navigation button:hover {
+  color: #555;
+}
+
+.react-calendar__month-view__weekdays {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  font-weight: bold;
+}
+
+.react-calendar__month-view__weekNumbers {
+  display: none;
+}
+
+.react-calendar__tile {
+  border: none;
+  padding: 0;
+  margin-bottom: 27px;
+}
+
+.react-calendar__tile--now {
+  background-color: #f0f8ff;
+}
+
+.react-calendar__tile--active {
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background-color: #0066cc;
+}
+
+.react-calendar__tile--range {
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+.react-calendar__tile--range:enabled:hover,
+.react-calendar__tile--range:enabled:focus {
+  background-color: #0066cc;
+}
+
+.react-calendar__tile--rangeStart,
+.react-calendar__tile--rangeEnd {
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+.react-calendar__tile--rangeStart:enabled:hover,
+.react-calendar__tile--rangeEnd:enabled:hover,
+.react-calendar__tile--rangeStart:enabled:focus,
+.react-calendar__tile--rangeEnd:enabled:focus {
+  background-color: #0066cc;
+}
+
+.react-calendar__tile--rangeStart {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.react-calendar__tile--rangeEnd {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.react-calendar__tile--active {
+  background-color: #1e90ff;
+  color: #fff;
+}
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background-color: #0066cc;
+}
+
+
+
+
+.yes .fa, .fas {
+  font-weight: 900;
+}
+
+.yes .fa, .far, .fas {
+  font-family: "Font Awesome 5 Free";
+}
+.yes .fa, .fab, .fad, .fal, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.info-box .info-box-text, .info-box .progress-description {
+  /* display: block; */
+  color: #020101;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.info-box .info-box-number {
+  /* display: block; */
+  color: #000000;
+  float: right;
+  margin-top: -2.25rem;
+  font-weight: 700;
+}
+.info-box .info-box-icon {
+  border-radius: 0.25rem;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.875rem;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  width: 70px;
+}
+
+.main-footer {
+  background-color: #fff;
+  border-top: 1px solid #dee2e6;
+  color: #869099;
+  padding: 1rem;
+}
+
+
+.word {
+  font-family: sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    /* background: green; */
+}
+
+
+.align-items-center {
+  background-image: linear-gradient(to right, transparent, #09b);
+  border-radius: 40%;
+  text-align: center;
+  margin: 4px;
+  -ms-flex-align: center!important;
+  align-items: center!important;
+}
+
+
+
+
+.container7 {
+  /* position: absolute; */
+  height: 300px;
+  width: 600px;
+  top: 60px;
+  left: calc(50% - 300px);
+  display: flex;
+}
+
+.container7 .card {
+  display: flex;
+  height: 280px;
+  width: 200px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.container7 .card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.container7 .card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.container7 .card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.container7 .title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.container7 .bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.container7 .emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.container7 .filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  transition: 0.6s ease-out;
+}
+
+.container7 .card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.container7 .circle {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
+}
+
+.container7 .stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+.container7 svg {
+  fill: #17141d;
+  stroke-width: 2px;
+}
+
+.container7 .card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
+
+
+
+

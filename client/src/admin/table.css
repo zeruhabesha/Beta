@@ -1,0 +1,188 @@
+
+/* @import url('https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css'); */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  th, td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    /* width:100%; */
+  }
+  td{
+    /* width:100%; */
+    overflow: auto;
+  }
+  th {
+    background-color: #eee;
+    font-weight: bold;
+    /* width:50%; */
+  }
+  
+  tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+
+  .dropdown{
+padding-left: 0%;
+  }
+  
+  .btns{
+    padding:5px;
+  }
+   table tr th {
+    color: black;
+      }
+        table tr td {
+    color: black;
+      }
+
+
+  /* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+
+
+
+/* Table.css */
+.data-table1 {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table1 th,
+.data-table1 td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.data-table1 th {
+  cursor: pointer;
+}
+
+.print-button,
+.export-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.print-button {
+  margin-right: 10px;
+}
+
+/* CSS for print media query */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .data-table1,
+  .data-table1 * {
+    visibility: visible;
+  }
+  .data-table1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .print-button,
+  .export-button {
+    display: none;
+  }
+}
+/* Reset default styles for input */
+input[type="search"] {
+  appearance: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  color: #333;
+  width: 50%;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Style the search icon inside the input */
+input[type="search"]::placeholder {
+  color: #999;
+}
+
+/* Hover effect */
+input[type="search"]:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus effect */
+input[type="search"]:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding to the left of the input to accommodate the search icon */
+input[type="search"] {
+  padding-left: 30px;
+}
+
+/* Style the search icon using a pseudo-element (you can use an image or font icon) */
+input[type="search"]::before {
+  content: "\f002"; /* Unicode character for search icon (can be replaced with an image or other icon) */
+  font-family: "Font Awesome 5 Free"; /* Replace with the font you're using for icons (if applicable) */
+  position: absolute;
+  left: 200px;
+  top: 150%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #999;
+  pointer-events: none; /* Ensure the icon does not interfere with input interaction */
+}
+
