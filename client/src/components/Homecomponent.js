@@ -19,6 +19,7 @@ import FSL from "../admin/images/FSL.png";
 import LEZARD from "../admin/images/LEZARD.png";
 import MATEST from "../admin/images/MATEST.png";
 import sandp from "../admin/images/sandp.png";
+import LOGO from "../logo/logo.png";
 
 function onScroll(event) {
   const scrollPosition = window.pageYOffset;
@@ -150,25 +151,33 @@ style={{border:`none`}}>
     <div class="container" >
       <div class="row">
         <div class="col-12">
-          <nav class="main-nav">
-            <a href="index.html" class="logo">
-              <img src="assets/images/logo.png" alt="Beta Plc"/>
+          <nav class="main-nav" style={{display: `inline-block`,width: `100%`}}>
+            <a href="index.html" class="logo" 
+            style={{    
+        height: `5%`,
+        display: `flex`, 
+        width:`10%`,
+        flexWrap: `nowrap`,
+        marginTop: `6vh`,
+        marginLeft: `8vh`,
+        alignItems: `stretch`}}>
+              <img src={LOGO}  alt="Beta Plc"/>
             </a>
         
-            <ul class="nav">
+            <ul class="nav" style={{marginTop: `6vh`, marginRight: `2vh`}}>
               <li class="scroll-to-section"><a href="#top" class="active one">Home</a></li>
               <li class="scroll-to-section"><a href="#services" class="one">Services</a></li>
               <li class="scroll-to-section"><a href="#about"class="one">About</a></li>
               <li class="scroll-to-section"><a href="#client"class="one">Our Clients</a></li>
-              <li class="scroll-to-section"><a href="#pricing"class="one">Our Teams</a></li>
+              {/* <li class="scroll-to-section"><a href="#pricing"class="one">Our Teams</a></li> */}
               <li class="scroll-to-section"><a href="#contact"class="one">Contact</a></li>
               <li class="scroll-to-section"><a href="#newsletter"class="one">Newsletter</a></li>
               <li class="scroll-to-section"><div class="gradient-button"><button  onClick={() => handleLog()} ><i class="fa fa-sign-in-alt"></i> Sign In Now</button></div></li> 
              {/* id="modal_trigger" href="#modal" */}
             </ul>        
-            <a class='menu-trigger'  >
+            {/* <a class='menu-trigger'  >
                 <span>Menu</span>
-            </a>
+            </a> */}
           </nav>
         </div>
       </div>
@@ -176,6 +185,7 @@ style={{border:`none`}}>
   </header>
 
 <div id="myModal" class="modal">
+
 
 <div class="modal-content">
 <span class="close">&times;</span>
@@ -333,17 +343,17 @@ This can be done by simulating cyberattacks and testing the effectiveness of the
 </Modal>
 
 
-<div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+<div class="main-banner wow fadeIn" style={{padding: `17% 5% 15% 13%` }}id="top" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="row">
             <div class="col-lg-6 align-self-center">
-              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <h2>Beta Plc</h2>
-                    <p style={{color:`white`}}>
+              <div style={{marginRight: `5vh`}} class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div style={{marginRight: `-4vh`, marginLeft: `-5vh`}} class="row">
+                  <div style={{color:`white`}} class="col-lg-12">
+                    <h2>Beta Research and Development Plc</h2>
+                    <p >
                     Maziv Engineering PLC is an experienced engineering company in Ethiopia in the supply of electrical, electromechanical, ventilation, air conditioning, educational lab equipment, security cameras and one card system materials with full service, design and installation.
                     </p>
                     <i style={{color:`white`}}> You can get Our App</i>
