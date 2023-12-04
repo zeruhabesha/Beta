@@ -12,9 +12,35 @@ code {
     monospace;
 }
 
+
 /* @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 /* @import '../node_modules/bootswatch/dist/lumen/bootstrap.min.css'; 
 @import '../node_modules/font-awesome/css/font-awesome.min.css';  */
 @import url("http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css");
 @import url("https://www.w3schools.com/w3css/4/w3.css");
 @import url("https://fontawesome.com/icons?d=gallery&m=free&s=regular");
+@import url('https://www.jsdelivr.com/package/npm/font-awesome-animation');
+
+/* @tailwind base;  */
+ @tailwind components;
+@tailwind utilities; 
+
+
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: inline;
+  vertical-align: middle;
+}
+
+
+
+
+@media (min-width: 992px) {
+  .modal-lg {
+      max-width: 80%;
+  }
+}
+
+.nav1 {
+  overflow-y: auto;
+  scrollbar-width: 10px;
+}
